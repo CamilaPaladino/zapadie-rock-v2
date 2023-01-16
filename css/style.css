@@ -1,0 +1,772 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+header {
+    background-color: rgba(70, 69, 69, 0.5);
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 0 auto;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #EEEEEE;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+header nav a:hover {
+    color:#E4C00F;
+    font-style: italic;}
+
+.open-menu, .close-menu {
+    display: none;
+}
+
+.titulares {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    font-size: 4.5rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5), 1px 4px 10px rgba(206,206,206,0.07);
+}
+
+.titulares p {
+    margin-bottom: 0;
+    padding-top: 30px;
+}
+
+/*     SECTION SPLASH     */
+
+.splash{
+    height: 100vh;
+    background-color: black;
+}
+
+.videohomeDesk {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    margin: auto;
+}
+
+#button-up {
+    z-index: 5000;
+    width: 50px;
+    height: 50px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-radius: 50%;
+    font-size: 20px;
+    position: fixed;
+    bottom: 70px;
+    left: 48%;
+    cursor: pointer;
+    border: 4px solid, transparent;
+    transition: all 300ms ease;
+    transform: scale(0);
+}
+
+  #button-up:hover {
+    transform: scale(50);
+}
+
+
+/*     SECTION ESCUCHAR     */
+
+.escuchar{
+    background-color: #181818;
+    padding-bottom: 30px;
+}
+
+.contenedorDiscos{
+    display: flex;
+    padding: 0px 20px;
+}
+
+.disco {
+    width: 90%;
+    opacity: 1;
+    cursor: pointer;
+    transition: ease-in 0.3s;
+    margin: 0px 30px;
+}
+
+.disco:hover {
+    opacity: 0.6;
+    
+}
+.lanzamiento{
+    width: 50%;
+}
+
+.anteriores{
+    width: 50%;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+}
+
+.btnSpotify {
+    background-color: #1ed760;
+    border: none;
+    width: 160px;
+    height: 40px;
+    border-radius: 25px;
+    font-weight: 700;
+    margin-left: 60px;
+}
+
+.btnSpotify:hover {
+    box-shadow: 0px -1px 15px -3px rgba(255,255,255,0.75);
+}
+
+.btnSpotify a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.btnLeer {
+    background-color: transparent;
+    border: solid 1px white;
+    width: 160px;
+    height: 40px;
+    border-radius: 25px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.btnLeer a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btnLeer:hover {
+    box-shadow: 0px -1px 15px -3px rgba(255,255,255,0.75);
+}
+
+
+/*     SECTION VER     */
+.galeria{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    width: 300px;
+    margin-right: 15px;
+    filter: grayscale(100%);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.galeria img:hover {
+    filter: grayscale(0%);
+}
+
+.video1 {
+    margin-top: 100px;
+}
+
+
+
+/*     SECTION SER     */
+
+.container {
+    margin-bottom: 50px;
+}
+
+.descriptionSer{
+    padding: 20px 180px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+.contPresentacion{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+}
+
+.card{
+    max-width: 270px;
+    height: 300px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin: 0 10px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.card .image {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.card .overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #ffffff8c;
+    overflow: hidden;
+    border-bottom: 2px solid black;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+
+.card:hover .overlay {
+    top: 0;
+    height: 100%;
+}
+
+.text {
+    width: 100%;
+    height: 100%;
+    color: #000;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.text .name {
+    font-size: 28px;
+    font-weight: 500;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+    
+.text .position {
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #464545;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.card ul{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-social {
+    list-style: none;
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 0;
+    transition: 0.5s ease-in-out;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    background: #fff;
+    list-style: none;
+}
+
+.social {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;   
+}
+
+.social a{
+    color: #000;
+}
+
+.social a:hover {
+    color: #fff;
+}
+
+.menu-social:hover{
+    background: black;
+    color: #fff;     
+}
+
+.menu-social title {
+    color: #1ed760;
+}
+
+.card i {
+    color: #000;
+}
+
+.card i:hover{
+    color: #fff;
+}
+
+
+/*     SECCION LEER      */
+
+.leer {
+    display: flex;
+}
+
+
+/*     FOOTER     */
+
+footer {
+    text-align: center;
+}
+
+.conocenos {
+    color: #727171;
+  }
+
+.conocenos p {
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.conocenos h3 {
+    font-style: italic;
+    font-size: 1rem;
+}
+  
+.by {
+    background-color: #464545;
+    padding: 8px;
+    margin-top: 70px;
+}
+
+.by a {
+    font-size: 0.7rem;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+}
+
+.by p {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 0;
+}
+
+
+/*     SECCIÓN DISCO     */
+
+.principal {
+    margin-bottom: 50px;
+}
+
+.banner {
+    background-color: #464545;
+    width: 85%;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.banner p {
+    font-size: 1.7rem;
+    text-align: center;
+    padding-top: 15px;
+    color: #fff;
+}
+
+.iconos {
+    font-size: 45px;
+    text-align: center;
+}
+
+.iconos i {
+    margin: 0px 12px;
+    color: #E4C00F;
+}
+
+
+.discografia, .discografiaTapas{
+    padding-left: 70px;
+    padding-right: 70px ;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 70px;
+    height: auto;
+}
+
+.canciones {
+    color: #fff;
+    height: 100vh;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 50px 40px 50px;
+    margin-left: 80px;
+    margin-bottom: 450px;
+}
+
+
+.accordion-item{
+    background-color: black;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: black;
+    color:#E4C00F;
+    font-style: italic;
+    border: none;
+}
+
+.tituloCancion {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: black;
+    border-bottom: solid 1px #464545;
+}
+
+.tituloCancion:hover {
+    color:#E4C00F;
+    font-style: italic;
+}
+
+.infoDisco {
+    height: 850px;
+    padding: 10px;
+    background-color: #181818;
+    flex-direction: column;
+    display: flex;
+    align-content: center;
+}
+
+.infoDisco img, .leerTapas img{
+    width: 250px;
+    border: solid 2px #464545;
+    margin: 0 auto;
+}
+
+.schemaDisco{
+    padding-bottom: 15px;
+    padding-top: 25px;
+    text-align: center;
+    border-bottom: solid 2px #464545;
+}
+
+.tapasDisco {
+    padding-bottom: 15px;
+    padding-top: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+.musicos {
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.schemaDisco p, .musicos p, .tapasDisco p{
+    color:#464545;
+    margin-bottom: 0;
+    line-height: 35px;
+}
+
+.schemaDisco span, .musicos span, .tapasDisco span {
+    color: white;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.leerTapas {
+    height: 500px;
+    padding: 30px;
+    margin: 10px;
+    background-color: #181818;
+    flex-direction: column;
+    display: flex;
+    align-content: center;
+    cursor: pointer;
+}
+
+.btnSpotifyCenter {
+    background-color: #1ed760;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: 700;
+    margin: 0px auto;
+    padding: 0;
+}
+
+.btnLeerCenter {
+    background-color: transparent;
+    border: solid 1px white;
+    width: 120px;
+    height: 40px;
+    border-radius: 25px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.btnSpotifyCenter:hover, .btnLeerCenter:hover{
+    box-shadow: 0px -1px 15px -3px rgba(255,255,255,0.75);
+}
+
+.btnSpotifyCenter a, .btnLeerCenter a{
+    text-decoration: none;
+    color: black;
+}
+
+.btnLeerCenter a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btnLeerCenter:hover {
+    box-shadow: 0px -1px 15px -3px rgba(255,255,255,0.75);
+}
+
+
+/*     MEDIA QUERYS     */
+
+@media screen and (max-width: 900px){
+    .schemaDisco p, .musicos p, .tapasDisco p{
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .accordion-button {
+        font-size: 18px;
+    }
+
+    .discografiaTapas{
+        flex-wrap: wrap;
+    }
+
+    .discografia {
+        padding: 20px;
+    }
+
+    .canciones {
+        margin-left: 10px;
+        padding: 20px;
+    }
+
+    /*index*/
+
+    .container {
+        margin: 0px 10px 30px 10px;
+        margin: 0 auto;
+    }
+
+    .descriptionSer {
+        padding: 20px 80px;
+    }
+
+    .btnSpotify, .btnLeer{
+        width: 120px;
+        height: 30px;
+    }
+
+    .btnSpotify a, .btnLeer a {
+        font-size: 12px;
+    }
+
+    .galeria img {
+        width: 250px;
+    }
+
+    .descriptionSer{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .titulares {
+        font-size: 3rem;
+    }
+
+    .disco {
+        margin: 0 30px;
+    }
+
+    .contenedorDiscos {
+        justify-content: center;
+    }
+
+    .lanzamiento, .anteriores {
+        min-width: 340px;
+        margin: 20px 0px;
+    }
+
+    .video1, .video2 {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    
+    .discografia {
+        flex-wrap: wrap;
+    }
+
+    .videohomeDesk {
+        margin-bottom: 0;
+    }
+
+    .contenedorDiscos {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+
+    .galeria {
+        padding: 10px;
+    }
+    .galeria img {
+        width: 180px;
+    }
+
+    .descriptionSer {
+        padding: 15px;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    .card{
+        max-width: 220px;
+        height: 250px;
+    }
+
+    .disco {
+        margin: 0;
+    }
+
+    header{
+        background-color: transparent;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        align-items: center;
+        background-color:#181818;
+        height: 100vh;
+        font-size: 50px;
+        margin-left: 0;
+        margin-bottom: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+    }
+
+    nav a {
+        line-height: 40px;
+        padding-bottom: 0;
+    }
+
+    .open-menu, .close-menu {
+        display: block;
+    }
+
+    .open-menu {
+        border: none;
+        cursor: pointer;
+        justify-content: center;
+        margin-right: -10px;
+        align-self: center;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        font-size: 30px;
+        color: #E4C00F;
+        background-color: transparent;
+    }
+
+    .close-menu {
+        border: none;
+        cursor: pointer;
+        align-self: flex-end;
+        margin-right: 25px;
+        margin-top: 11px;
+        margin-bottom: 15px;
+        font-size: 32px;
+        color: #E4C00F;
+        background-color: transparent;
+    }
+
+    .menu_opened {
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+
+@media screen and (max-width: 370px) {
+
+    .canciones {
+        margin-bottom: 670px;
+    }
+
+    .titulares {
+        font-size: 2rem;
+    }
+
+    .infoDisco {
+        margin: 10px;
+    }
+
+}
+
+ 
